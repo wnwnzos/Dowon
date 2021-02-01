@@ -12,10 +12,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://wnwnzos.github.io/Dowon/css/bootstrap.min.css.map"></script>
 
-    <!-- Add Google Maps -->
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+ 
 
 </head>
 
@@ -302,32 +301,8 @@
     <!-- Container (Contact Section) -->
     <div id="contact" class=" contWrap">
         <!--지도-->
-        <div id="googleMap"></div>
-        <!-- Add Google Maps -->
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-            function initialize() {
-                var mapProp = {
-                    center: myCenter,
-                    zoom: 12,
-                    scrollwheel: false,
-                    draggable: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-                var marker = new google.maps.Marker({
-                    position: myCenter,
-                });
-
-                marker.setMap(map);
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+        <div class="contImg"></div>
+      
 
         <div class="contact">
             <h3 class="text-center">문의 및 연락</h3>
