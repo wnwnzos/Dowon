@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Dowon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Add Google Maps -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--헤더영역-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">도원</a></li>
+                    <li><a href="#ceramic">도원도자기</a></li>
+                    <li><a href="#info">소개</a></li>
+                    <li><a href="#contact">문의</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--배너영역-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+        <!--배너왼쪽-->
+        <div class="left_ban_wrap">
+            <h3 style=" font-size:2.4vw;">전통적 감성의 도예</h3>
+            <p>'전통, 예술, 아름다움'의 가치를 실현하는 '도원'은 도예에 이를 융합해 탄생했습니다.
+                전통과 사람으로부터 받은 영감을 통해 아름다운 도자기를 빚고,
+                이를 현대의 도시인들에게 선물하여 그 가치를 일깨우는데에 목표를 두고 있습니다.
+                전통의 기술을 고집하는 문원의 작품을 통해, 여러분의 공간이 새롭게 변하는 과정을 느껴보세요.</p>
+        </div>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/ban1.jpg" alt="배너1">
+            </div>
+
+            <div class="item">
+                <img src="images/ban2.jpg" alt="배너2">
+            </div>
+
+            <div class="item">
+                <img src="images/ban3.jpg" alt="배너3">
+            </div>
+            <div class="item">
+                <img src="images/ban4.jpg" alt="배너4">
+
+            </div>
+            <div class="item">
+                <img src="images/ban5.jpg" alt="배너5">
+            </div>
+            <div class="item">
+                <img src="images/ban6.jpg" alt="배너6">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Container (도원도자기영역) -->
+    <div id="ceramic" class="bg-1" style="background-color:#fff;">
+        <div class="container">
+            <!--
+             <ul class="list-group">
+      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">November <span class="badge">3</span></li>
+    </ul>
+-->
+
+            <div class="row text-center">
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic1.jpg" alt="도자기1">
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic2.jpg" alt="도자기2">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic3.jpg" alt="도자기3">
+
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic4.jpg" alt="도자기4 York">
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row text-center">
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic5.jpg" alt="도자기5">
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic6.jpg" alt="도자기6">
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic7.jpg" alt="도자기7">
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <div class="cover">
+                            <div class="covertxt">
+                                <h5>흙빛 도자 찬기</h5>
+                                <p>
+                                    ￦120,000
+                                </p>
+                            </div>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Click!</button>
+                        </div>
+                        <img src="images/ceramic8.jpg" alt="도자기8">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#bfbfbf;">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 style="background-color:#bfbfbf;"><span class="glyphicon glyphicon-lock"></span> ORDER</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> 주문</label>
+                                <input type="number" class="form-control" id="psw" placeholder="수량을 선택해주세요.">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon glyphicon-user"></span> 공유하기</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="이메일을 입력해주세요.">
+                            </div>
+                            <button type="submit" class="btn btn-block modalbtn" style="background-color:#bfbfbf; color:#555;">결제하기
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left modalbtn" data-dismiss="modal" style="background-color:#bfbfbf; color:#555;">
+                            <span class="glyphicon glyphicon-remove"></span> 취소하기
+                        </button>
+                        <p> <a href="#">도움이필요하신가요?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (소개영역) -->
+    <div id="info" class="info_wrap">
+        <div class="infotxt">
+            <h2>도원 도예 공방</h2>
+            <p>도원은 도자기에 새겨진 아름다운 무늬와 그 근원을 뜻하는 말입니다. 다양한 사람들의 일상을 도자기에 담아, 쓰는 이들로 하여금 소소한 행복을 느낄 수 있도록 합니다.
+                흙을 만지고 빚어 도자기를 만들어내는 도예야 말로, 우리 삶에 아름다운 예술적 가치를 부여하며 삶을 더욱 풍부하게 만들어 주리라 믿습니다.</p>
+        </div>
+        <div class="infoimg img1">
+
+        </div>
+    </div>
+
+    <div class="info_wrap">
+        <div class="infotxt">
+            <h2>가장 한국적인 멋</h2>
+            <p>'도원'은 수 년 동안 가장 한국적인게 무엇인가를 고민하며 그 해답을 찾아가고 있는 도예공방입니다. 오로지 한국 전통의 기술만을 고집하며 도자기를 만들어온 '도원'은, 자그마한 도자기에 그 정신을 담아 여러분에게 선물함으로써 그 가치을 느낍니다.</p>
+        </div>
+        <div class="infoimg img2"></div>
+    </div>
+
+
+
+
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class=" contWrap">
+        <!--지도-->
+        <div id="googleMap"></div>
+
+        <div class="contact">
+           <h3 class="text-center">문의 및 연락</h3>
+              
+            
+            <div class="row">
+                <div class="col-md-8 continfo">
+                 
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn pull-right contbtn" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+       
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="goto-top" data-toggle="tooltip" data-placement="top" title="UP!" href="#myPage" >
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <div class="footertxt">
+            <h2><img src="images/footer_logo.svg" alt="푸터로고"></h2>
+            <div class="center">
+                고객센터 : 1544- 1234<br>
+                AM 10:00 ~ PM 5:00 (토, 일, 공휴일 휴무)
+            </div>
+            <div class="address">
+                회사명 : 도원   대표 : 홍길동<br>
+                사업자등록번호 : 1234-12-123456 [사업자정보확인]<br>
+                통신판매업신고번호 : 제2019-서초구방배-1234호<br>
+                주소 : 서울시 서초구 대한로 12번길 12
+            </div>
+            <div class="copy">
+               Copyrights © 2019 by<b> DOWON</b>. All Rights Reserved.
+            </div>
+            
+        </div>
+        
+        
+    </footer>
+
+
+
+</body></html>
+
