@@ -1,4 +1,7 @@
-@charset "utf-8";
+
+
+
+
 
 @media only screen and (min-width:1500px) and (max-width:2200px){
     
@@ -14,6 +17,20 @@
     
     
 }
+
+@media only screen (max-width:375px){
+
+    body{
+        background-color: red;
+    }
+    
+    
+    
+    
+    
+    
+}
+
 
 
 
