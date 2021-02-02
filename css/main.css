@@ -142,7 +142,6 @@ h4 {
 /*베너 왼쪽영역*/
 .left_ban_wrap {
     position: absolute;
-    top: 82px;
     left: 0;
     width: 100%;
     height: 690px;
@@ -152,6 +151,7 @@ h4 {
 }
 
 .left_ban_wrap h3 {
+    font-size: 30px;
     font-family: SbatangL;
     color: #4b4b4b;
 }
@@ -271,7 +271,7 @@ h4 {
     min-height: 23vw;
 }
 
-.modal-dialog{
+.modal-dialog {
     z-index: 9999;
 }
 
@@ -302,10 +302,10 @@ h4,
 }
 
 /*문의이미지*/
-.contImg{
+.contImg {
     width: 50%;
     background: url(../images/contimg.jpg)no-repeat;
-    background-size:cover; 
+    background-size: cover;
 }
 
 
@@ -317,7 +317,6 @@ h4,
     font-size: 11px !important;
     letter-spacing: 4px;
     opacity: 0.9;
-    height: 82px;
 }
 
 .navbar li a,
@@ -376,8 +375,11 @@ h4,
 
 /*문의보내기 버튼*/
 .contbtn {
-    bottom: -2vw;
-    left: 93%;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
 }
 
 /*푸터영역*/
@@ -435,12 +437,12 @@ footer a:hover {
 
 
 /*탑버튼*/
-.goto-top{
+.goto-top {
     position: absolute;
     bottom: 10%;
     width: 40px;
     height: 40px;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     font-size: 24px;
     line-height: 40px;
@@ -449,8 +451,10 @@ footer a:hover {
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
-.goto-top:hover{
-    background:rgba(0, 0, 0, 0.7); color:#fff;
+
+.goto-top:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
 }
 
 
