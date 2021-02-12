@@ -2,93 +2,242 @@
 
 /*1500이하*/
 @media only screen and (max-width:1500px) {
-    
+
     .left_ban_wrap {
-    padding: 30% 10%;
-}
-    
-    
-    .left_ban_wrap h3{
+        padding: 30% 10%;
+    }
+
+
+    .left_ban_wrap h3 {
         font-size: 25px;
     }
-    
+
     .left_ban_wrap p {
-    font-size: 13px;
-}
-    
+        font-size: 13px;
+    }
+
     .info_wrap div {
-    padding: 10% 3%;
-}
-    
+        padding: 10% 3%;
+    }
+
     .infotxt h2 {
-    font-size: 40px;
-}
-    
+        font-size: 40px;
+    }
+
     .infotxt p {
-    margin-top: 3vw;
-    font-size: 16px;
-    letter-spacing: 2px;
-}
-    
-    
-    
-    
+        margin-top: 3vw;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+
+
+
 }
 
 
-/*1024이하*/
-@media only screen and (max-width:1024px){
+/*1024이하(아이패드 프로)*/
+@media only screen and (max-width:1024px) {
     .carousel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-.left_ban_wrap {
-     position: static; 
-    left: 0;
-    order: 2;
-}
-
-.carousel-inner {
-    order: 1;
-     position: static; 
-
-}
-    
-    .carousel-indicators {
-    top: 47%;
-}
-    
-    
     .left_ban_wrap {
-    padding: 18% 10%;
-}
-    
+        order: 2;
+        position: static;
+        width: 100%;
+        padding: 18% 10%;
+    }
+
     .left_ban_wrap p {
-    font-size: 16px;
-}
-    
+        font-size: 16px;
+    }
+
+    .carousel-inner {
+        right: 0;
+        width: 100%;
+    }
+
+    .topbullet {
+        top: 48%;
+    }
+
+
     /*도자기 이름*/
     .cover h5 {
-    font-size: 14px;
-}
-    
+        font-size: 14px;
+    }
+
     /*클릭버튼 위치*/
-    .btn {
-    bottom: 14%;
+    .clickBtn {
+        bottom: 14%;
+    }
+
+
+    .infotxt h2 {
+        font-size: 25px;
+    }
+
+    .infotxt p {
+        font-size: 12px;
+    }
+
+    .contact {
+        padding: 4% 0 0 4%;
+    }
+
+    .modal-footer {
+        margin-top: 7%;
+        padding: 15px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+    }
+
+
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+/*768이하(아이패드)*/
+@media only screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .left_ban_wrap {
+        padding: 25% 10%;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .info_wrap {
+        flex-direction: column;
+    }
+
+    .info_wrap div {
+        width: 100%;
+    }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+
+
+
+    /*아이폰X*/
+    @media only screen and (max-width:375px) {
+        .carousel-inner .item img {
+            height: 400px;
+        }
+
+        .left_ban_wrap {
+            padding: 20% 5%;
+            height: 422px;
+            letter-spacing: 2px;
+        }
+
+        .left_ban_wrap p {
+            font-size: 12px;
+        }
+
+        .topbullet {
+            top: 45%;
+        }
+
+
+        .info_wrap {
+            height: 398px;
+        }
+
+
+
+        /*컨텍트*/
+        .contWrap {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .contImg {
+            width: 100%;
+            height: 230px;
+        }
+
+        .contact {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+
+        .text-center {
+            font-size: 20px;
+        }
+
+
+
+
+
+
+        /*푸터*/
+        .footertxt h2 img {
+            width: 12%;
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
